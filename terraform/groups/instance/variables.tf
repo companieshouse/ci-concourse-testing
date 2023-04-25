@@ -41,6 +41,11 @@ variable "key_name" {
   description = "Name of an existing SSH keypair to use on the EC2 instance"
 }
 
+variable "release_tag" {
+  type        = string
+  description = "Github release tag that the code is deployed from"
+}
+
 variable "root_volume_size" {
   type        = number
   description = "Size, in GiB, for the root EBS volume"

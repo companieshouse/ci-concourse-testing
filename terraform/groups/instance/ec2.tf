@@ -19,9 +19,10 @@ resource "aws_instance" "test" {
   }
 
   tags = {
-    Name      = "${var.service}-${var.environment}-01"
-    Terraform = "true"
-    Concourse = "new"
+    Name       = "${var.service}-${var.environment}-01"
+    Terraform  = "true"
+    Concourse  = "new"
+    ReleaseTag = var.release_tag
   }
 }
 
