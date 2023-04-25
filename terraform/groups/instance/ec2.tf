@@ -35,7 +35,7 @@ resource "aws_security_group" "test" {
     from_port       = 22
     to_port         = 22
     protocol        = "tcp"
-    prefix_list_ids = []
+    prefix_list_ids = [data.aws_ec2_managed_prefix_list.admin.id]
   }
 
   egress {
