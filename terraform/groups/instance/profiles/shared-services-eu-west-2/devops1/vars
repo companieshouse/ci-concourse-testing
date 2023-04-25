@@ -1,0 +1,7 @@
+aws_account = "shared-services"
+aws_region = "eu-west-2"
+environment = "devops1"
+
+build_subnet_prefix = "sub-build"
+instance_type = "t3.small"
+key_name = "platform-infrastructure"
